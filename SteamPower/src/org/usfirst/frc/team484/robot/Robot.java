@@ -22,6 +22,11 @@ public class Robot extends IterativeRobot {
 
 	public static RobotIO io;
 	public static final ExampleSubsystem exampleSubsystem = new ExampleSubsystem();
+	public static final Climber climber = new Climber();
+	public static final GearRaiser gearRaiser = new GearRaiser();
+	public static final GearClamp gearClamp = new GearClamp();
+	public static final GearEjector gearEjector = new GearEjector();
+	public static final DriveTrain driveTrain = new DriveTrain();
 	public static OI oi;
 
 	Command autonomousCommand;
