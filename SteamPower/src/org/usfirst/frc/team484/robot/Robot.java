@@ -20,6 +20,7 @@ import org.usfirst.frc.team484.robot.subsystems.ExampleSubsystem;
  */
 public class Robot extends IterativeRobot {
 
+	public static RobotIO io;
 	public static final ExampleSubsystem exampleSubsystem = new ExampleSubsystem();
 	public static OI oi;
 
@@ -32,6 +33,7 @@ public class Robot extends IterativeRobot {
 	 */
 	@Override
 	public void robotInit() {
+		io = new RobotIO();
 		oi = new OI();
 		chooser.addDefault("Default Auto", new ExampleCommand());
 		// chooser.addObject("My Auto", new MyAutoCommand());

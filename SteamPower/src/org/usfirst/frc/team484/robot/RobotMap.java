@@ -1,5 +1,9 @@
 package org.usfirst.frc.team484.robot;
 
+import edu.wpi.first.wpilibj.DoubleSolenoid;
+import edu.wpi.first.wpilibj.Encoder;
+import edu.wpi.first.wpilibj.Talon;
+
 /**
  * The RobotMap is a mapping from the ports sensors and actuators are wired into
  * to a variable name. This provides flexibility changing wiring, makes checking
@@ -16,4 +20,33 @@ public class RobotMap {
 	// number and the module. For example you with a rangefinder:
 	// public static int rangefinderPort = 1;
 	// public static int rangefinderModule = 1;
+	public static int topGyro = 0;
+	public static int bottomGyro = 1;
+	public static int gearSense = 2;
+	
+	public static int flWheel = 0;
+	public static int rlWheel = 1;
+	public static int frWheel = 2;
+	public static int rrWheel = 3;
+	public static int fcWheel = 4;
+	public static int rcWheel = 5;
+	public static int rClimber = 6;
+	public static int lClimber = 7;
+	
+	public static int gEjectIn = 0;
+	public static int gEjectOut = 1;
+	public static int gRaiseUp = 2;
+	public static int gRaiseDown = 3;
+	public static int gClampOpen = 4;
+	public static int gClampClose = 5;
+	
+	public static int lEncA = 0;
+	public static int lEncB = 1;
+	public static int rEncA = 2;
+	public static int rEncB = 3;
+	public static int fcEncA = 4;
+	public static int fcEncB = 5;
+	public static int rcEncA = 6;
+	public static int rcEncB = 7;
+	
 }
