@@ -49,4 +49,6 @@ public class RobotMap {
 	public static int rcEncA = 6;
 	public static int rcEncB = 7;
 	
+	public static int driveStick = 0;
+	public static int opStick = 1;
 }

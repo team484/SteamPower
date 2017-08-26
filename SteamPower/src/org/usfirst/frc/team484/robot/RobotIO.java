@@ -5,33 +5,37 @@ import edu.wpi.first.wpilibj.AnalogInput;
 import edu.wpi.first.wpilibj.Compressor;
 import edu.wpi.first.wpilibj.DoubleSolenoid;
 import edu.wpi.first.wpilibj.Encoder;
+import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.Talon;
 
 public class RobotIO {
 	
-	AnalogGyro topGyro;
-	AnalogGyro bottomGyro;
-	AnalogInput gearSense;
+	public static AnalogGyro topGyro;
+	public static AnalogGyro bottomGyro;
+	public static AnalogInput gearSense;
 	
-	Talon flWheel;
-	Talon rlWheel;
-	Talon frWheel;
-	Talon rrWheel;
-	Talon fcWheel;
-	Talon rcWheel;
-	Talon rClimber;
-	Talon lClimber;
+	public static Talon flWheel;
+	public static Talon rlWheel;
+	public static Talon frWheel;
+	public static Talon rrWheel;
+	public static Talon fcWheel;
+	public static Talon rcWheel;
+	public static Talon rClimber;
+	public static Talon lClimber;
 	
-	DoubleSolenoid gEject;
-	DoubleSolenoid gRaise;
-	DoubleSolenoid gClamp;
+	public static Joystick driveStick;
+	public static Joystick opStick;
 	
-	Encoder lEnc;
-	Encoder rEnc;
-	Encoder fcEnc;
-	Encoder rcEnc;
+	public static DoubleSolenoid gEject;
+	public static DoubleSolenoid gRaise;
+	public static DoubleSolenoid gClamp;
 	
-	Compressor compressor;
+	public static Encoder lEnc;
+	public static Encoder rEnc;
+	public static Encoder fcEnc;
+	public static Encoder rcEnc;
+	
+	public static Compressor compressor;
 	
 	
 	
@@ -59,5 +63,8 @@ public class RobotIO {
 		rcEnc = new Encoder(RobotMap.rcEncA, RobotMap.rcEncB);
 		
 		compressor = new Compressor();
+		
+		driveStick = new Joystick(RobotMap.driveStick);
+		opStick = new Joystick(RobotMap.opStick);
 	}
 }

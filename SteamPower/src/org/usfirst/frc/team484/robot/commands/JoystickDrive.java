@@ -1,6 +1,8 @@
 package org.usfirst.frc.team484.robot.commands;
 
 import org.usfirst.frc.team484.robot.Robot;
+import org.usfirst.frc.team484.robot.RobotIO;
+import org.usfirst.frc.team484.robot.RobotMap;
 
 import edu.wpi.first.wpilibj.command.Command;
 
@@ -21,7 +23,7 @@ public class JoystickDrive extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	//TODO: uhh?
+    	Robot.driveTrain.drive(RobotIO.driveStick.getX(), -RobotIO.driveStick.getY(), RobotIO.driveStick.getTwist());
     }
 
     // Make this return true when this Command no longer needs to run execute()
